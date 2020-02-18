@@ -15,7 +15,7 @@ export default class Palette extends Component {
                 {colorBoxes}
                 <div className="Palette-colors">{/* bunch of c */}</div>
                 {/* footer */}
-                hi
+                hi there
             </div>
         )
     }
