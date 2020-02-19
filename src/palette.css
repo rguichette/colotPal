@@ -1,3 +1,13 @@
 .Palette{
     height: 100vh;
 }
+.Palette-colors{
+    height: 100%;
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+}
+
+.rc-slider{
+    background-color:black;
+    /* padding: 15px; */
+}
