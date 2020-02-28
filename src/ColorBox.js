@@ -25,12 +25,16 @@ export default class ColorBox extends Component {
             <div className="ColorBox" style={{background}}>
                 
                 
-                <div style={{background}} className={`copy-overlay ${this.state.copied && "show"}`}/>
+                <div style={{background}} className={`copy-overlay ${this.state.copied && "show"}`}>
 
                 <div  className={`copy-msg ${this.state.copied && "show"}`}>
                     <h1>Copied!</h1>
                     <p>{this.props.background}</p>
                 </div>
+                    
+                </div>
+
+        
                 <div className="copy-container">
              <div className="box-content">
         <span>{name}</span>

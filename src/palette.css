@@ -3,11 +3,40 @@
 }
 .Palette-colors{
     height: 100%;
-    /* display: flex; */
-    /* flex-wrap: wrap; */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.slider{
+    display: inline-block;
+    width: 325px;
 }
 
 .rc-slider{
-    background-color:black;
+    /* background-color:black; */
     /* padding: 15px; */
+    /* display: inline-block;
+    max-width: 400px; */
+
+}
+.rc-slider-step{
+    background-color:transparent
+    /* padding: 15px; */
+    /* color: white; */
+}
+.rc-slider-track, .rc-slider-rail,.rc-slider-step, .rc-slider-mark {
+    background-color:transparent
+    /* padding: 15px; */
+    /* color: white; */
+}
+.rc-slider-handle{
+background-color: blue;
+}
+.rc-slider-rail{
+    background-color: blue;
+}
+
+
+.Navbar{
+    background-color: red;
 }

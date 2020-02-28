@@ -1,32 +1,41 @@
 .ColorBox{
-    width:20%;
-    height:25%;
-    margin:0 auto;
-    display: inline-block;
-    position: relative;
-    cursor: pointer;
-    text-transform: uppercase;
-    margin-bottom: -3.5px;
+  width: 25%; 
+  /* position: relative; */
+  width:20%;
+  height:25%;
+  margin:0 auto;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-items: center;
+  justify-content: center;
+  text-align: center;
+  /* position: relative; */
+  cursor: pointer;
+  text-transform: uppercase;
+  /* margin-bottom: -3.5px; */
 }
 .copy-button{
- width: 100px;
- height: 30px;
- position:absolute;   
- display: inline-block;
- top: 50%;
- left: 50%;
- margin-left: -50px;
- text-align: center;
- outline: none;
- background: rgba(255, 255, 255, 0.3);
- color: white;
+    /* display: inline; */
+    opacity: 0;
+/* opacity: 0;
+font-weight: 300; */
+max-width: 100px;
+/* margin:auto */
+/* position: absolute; */
+/* justify-self: center;
+align-self: center; */
+/* height: 100%; */
 
- border: none;
- opacity: 0;
 }
 .ColorBox:hover .copy-button{
 opacity: 1;
-transition:0.5s ;
+/* width: 100%; */
+background-color:rgba(255, 255, 255, 0);
+border: none;
+font-weight: 300;
+max-width: 100px;
+margin: 0 auto;
 }
 
 
@@ -36,79 +45,83 @@ transition:0.5s ;
 
 
 .box-content{
-    position: absolute;
-    padding: 10px;
-    width:100%;
-    left:0px;
-    bottom: 0px;
-    color: black;
-    letter-spacing: 1px;
-    font-size: 12px;
+  /* background-color: #fff; */
+  /* position: relative; */
+  /* margin-top: auto; */
+  max-width: 85%;
+  justify-self: flex-end;
+  text-align: start;
 }
 
 .see-more{
-background: rgba(255, 255, 255, 0.3);
-position: absolute;
-border:none;
-right: 0px;
-bottom: 0;
-color: white;
-width: 60px;
-height: 30px;
-text-align: center;
-line-height: 30px;
-text-transform: uppercase;
+    /* position: absolute; */
+    background-color: rgb(124, 57, 57);
+    /* justify-self: flex-start; */
+    max-width: 90px;
+    /* margin-right: auto; */
+    margin-left: auto;
+
+    /* position: relative;
+    display: inline-block;
+width: 100%;
+text-align: right; */
 }
 
 
-
+.copy-container{
+    display: flex;
+    flex-direction: column-reverse;
+    /* background-color: seagreen; */
+    height: 100%;
+    
+}
 .copy-overlay{
     opacity: 0;
-    z-index: 0;
-    width: 100%;
-    height: 100%;
-    transition:  0.6s ease-in-out;
-    transform: scale(0.1)
+/* background-color: blue; */
+/* position:fixed; */
+/* height: 100vh;
+width: 100%; */
+/* top: 0;
+left: 0;
+bottom: 0;
+right: 0; */
+    
 }
 .copy-overlay.show{
+    z-index: 20;
     opacity: 1;
-    transform: scale(50);
-  
-    z-index: 10;
-    position: absolute;
- 
+    position: fixed;
+    transition: all 0.4s ease-in-out;
+    /* transform: scale(50); */
+   
+    height: 100vh;
+    width: 100%;
+     top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
 }
 
 .copy-msg{
-position: fixed;
-left: 0;
-/* top: 0; */
-bottom: 0;
-/* top: 0; */
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-font-size: 3rem;
-/* transform: 0; */
 opacity: 0;
-color: white;
-width: 100%;
+
 }
 .copy-msg.show{
-    opacity: 1;
-    transform: scale(1);
-    z-index: 25;
-    transition: all 0.4s ease-in-out;
-    transition-delay: .3s;
-    width: 100%;
+  opacity: 1;
+  /* position: absolute; */
+/* width: 100%; */
+height: 30%;
+  background-color: rgba(255, 255, 255, 0.226);
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  
+
 }
 .copy-msg h1{
- font-weight: 400;
- text-shadow: 1px 2px black;
- background-color: rgba(255, 255, 255, 0.2);
- width: 100%;
- text-align: center;
- margin-bottom: 0;
- padding: 1rem
+font-size: 1em;
 } 
