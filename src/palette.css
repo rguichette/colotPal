@@ -39,4 +39,20 @@ background-color: blue;
 
 .Navbar{
     background-color: red;
+    
+}
+
+
+.Palette-footer{
+    /* background-color: blue; */
+    background-color: white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 5vh;
+    font-weight: bold;
+}
+.emoji{
+    font-size: 1.5rem;
+    margin: 1rem;
 }

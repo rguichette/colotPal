@@ -46,7 +46,21 @@ changeFormat(val){
                 
                 </div>
                 {/* footer */}
-                hi there
+<div>
+    {
+        console.log("hey",this.props.palette.paletteName)
+        
+    }
+                <footer className="Palette-footer">
+                    {this.props.palette.paletteName}
+                 
+                    
+                    <span className={"emoji"}>{this.props.palette.emoji}</span>
+                   
+                </footer>
+                
+
+                </div>
             </div>
         )
     }
