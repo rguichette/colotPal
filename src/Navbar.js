@@ -7,6 +7,7 @@ import { Snackbar } from '@material-ui/core';
 import CloseIcon from "@material-ui/icons/Close"
 import IconButton from "@material-ui/core/IconButton"
 
+import {Link} from 'react-router-dom'
 
 // We can just import Slider or Range to reduce bundle size
 // import Slider from 'rc-slider/lib/Slider';
@@ -50,7 +51,8 @@ export default class Navbar extends Component {
               
              
             <div className="logo">
-                <a>reactColor</a>
+                <Link to="/">reactColorPicker</Link>
+                
                 <Slider defaultValue={this.props.level} min={100} max={900} step={100} onAfterChange={this.props.changeLevel}/>
             </div>
             <div className="select-container">
